@@ -1,14 +1,15 @@
 package routes
 
 import (
+	"github.com/gorilla/mux"
 	"github.com/ipoool/golang-starter-kit/handlers"
 	"github.com/ipoool/golang-starter-kit/interfaces"
-	"github.com/gorilla/mux"
 	"github.com/urfave/negroni"
 )
 
 // Route - Routing Services
 type Route struct {
+	Redis       interfaces.IRedis
 	DB          interfaces.ISQL
 	middleware  Middleware
 	homeHandler interfaces.IHomeHandler

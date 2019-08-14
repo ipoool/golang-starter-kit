@@ -65,7 +65,15 @@ func ServeHTTP(c *cli.Context) error {
 			Password: config.GetString("db.password"),
 			Charset:  config.GetString("db.charset"),
 		},
+		// setup redis connection
+		Redis: &drivers.Redis{
+			Host:     config.GetString("redis.host"),
+			Port:     config.GetInt("redis.port"),
+			Password: config.GetString("redis.password"),
+			DB:       config.GetInt("redis.db"),
+		},
 	}
+
 	route.Init()
 	routers := route.Handle()
 
