@@ -2,8 +2,8 @@ package routes
 
 import (
 	"github.com/gorilla/mux"
-	"github.com/ipoool/golang-starter-kit/handlers"
-	"github.com/ipoool/golang-starter-kit/interfaces"
+	"github.com/ipoool/laporcuranmor-api/handlers"
+	"github.com/ipoool/laporcuranmor-api/interfaces"
 	"github.com/urfave/negroni"
 )
 

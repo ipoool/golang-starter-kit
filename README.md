@@ -5,13 +5,13 @@
 First, Build the docker image
 
 ```sh
-docker build -t golang-starter-kit-app .
+docker build -t laporcuranmor-api-app .
 ```
 
 Second, Run the image in container
 
 ```sh
-docker run -d -p 8078:8078 golang-starter-kit-app
+docker run -d -p 8078:8078 laporcuranmor-api-app
 ```
 
 Third, Open the browser and Hit the Healtcheck

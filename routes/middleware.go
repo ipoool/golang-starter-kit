@@ -3,8 +3,8 @@ package routes
 import (
 	"net/http"
 
-	"github.com/ipoool/golang-starter-kit/constants"
-	"github.com/ipoool/golang-starter-kit/helpers"
+	"github.com/ipoool/laporcuranmor-api/constants"
+	"github.com/ipoool/laporcuranmor-api/helpers"
 )
 
 // Middleware - Middleware api

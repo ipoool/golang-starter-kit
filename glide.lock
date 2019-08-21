@@ -1,16 +1,25 @@
-hash: 71ae86ca615c9a9cf08a91e55e8638378732540d71668081d062a637c1d0f15b
-updated: 2019-08-13T15:45:54.894177+07:00
+hash: f97d2c396640029cd2e46e4e03eb8b82674624edb20b06891d80f0de1c1d29e3
+updated: 2019-08-20T18:49:15.802652+07:00
 imports:
 - name: github.com/dgrijalva/jwt-go
   version: 06ea1031745cb8b3dab3f6a236daf2b0aa468b7e
 - name: github.com/fsnotify/fsnotify
   version: c2828203cd70a50dcccfb2761f8b1f8ceef9a8e9
 - name: github.com/go-redis/redis
-  version: 75795aa4236dc7341eefac3bbe945e68c99ef9df
+  version: c5c4ad6a4cae24f3867af1a0513709fc944a87f3
+  subpackages:
+  - internal
+  - internal/consistenthash
+  - internal/hashtag
+  - internal/pool
+  - internal/proto
+  - internal/util
 - name: github.com/go-sql-driver/mysql
   version: 72cd26f257d44c1114970e19afddcd812016007e
 - name: github.com/gorilla/mux
   version: 00bdffe0f3c77e27d2cf6f5c70232a2d3e4d9c15
+- name: github.com/graph-gophers/graphql-go
+  version: 010347b5f9e671c07e4d7ba35a5eddead4959b7c
 - name: github.com/hashicorp/hcl
   version: 65a6292f0157eff210d03ed1bf6c59b190b8b906
   subpackages:
@@ -29,8 +38,6 @@ imports:
   version: 3536a929edddb9a5b34bd6861dc4a9647cb459fe
 - name: github.com/pelletier/go-toml
   version: bef2d19cb02636f36436cf436ec0bfb28c30195b
-- name: github.com/pressly/goose
-  version: c35094e75813e8b7a6d1f5593b9d6e9244183a3f
 - name: github.com/rs/cors
   version: 9a47f48565a795472d43519dd49aac781f3034fb
 - name: github.com/spf13/afero

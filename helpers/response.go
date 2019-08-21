@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/ipoool/golang-starter-kit/constants"
+	"github.com/ipoool/laporcuranmor-api/constants"
 )
 
 // Response - to showing the response JSON
