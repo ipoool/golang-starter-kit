@@ -13,11 +13,13 @@ type Route struct {
 	DB          interfaces.ISQL
 	middleware  Middleware
 	homeHandler interfaces.IHomeHandler
+	userHandler interfaces.IUserHandler
 }
 
 // Init - Initialize the route
 func (s *Route) Init() {
 	s.homeHandler = &handlers.HomeHandler{}
+	s.userHandler = &handlers.UserHandler{}
 }
 
 // Handle - Handling route
@@ -27,7 +29,7 @@ func (s *Route) Handle() *mux.Router {
 	var externalAPI = versionAPI.PathPrefix("/ex").Subrouter()
 
 	versionAPI.HandleFunc("/heartbeat", s.homeHandler.HeartBeat).Methods("GET")
-	externalAPI.HandleFunc("/heartbeat", s.homeHandler.HeartBeat).Methods("GET")
+	externalAPI.HandleFunc("/user/{user_id}", s.userHandler.GetUser).Methods("GET")
 
 	allRoute := mux.NewRouter()
 	externalAPI.Walk(func(route *mux.Route, router *mux.Router, ancestors []*mux.Route) error {
