@@ -10,9 +10,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ipoool/laporcuranmor-api/drivers"
-	"github.com/ipoool/laporcuranmor-api/helpers"
-	"github.com/ipoool/laporcuranmor-api/routes"
+	"github.com/ipoool/golang-starter-kit/drivers"
+	"github.com/ipoool/golang-starter-kit/helpers"
+	"github.com/ipoool/golang-starter-kit/routes"
 	"github.com/rs/cors"
 	config "github.com/spf13/viper"
 	"github.com/urfave/cli"

@@ -4,7 +4,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/ipoool/laporcuranmor-api/commands"
+	"github.com/ipoool/golang-starter-kit/commands"
 	"github.com/urfave/cli"
 )
 

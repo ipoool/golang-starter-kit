@@ -6,7 +6,7 @@ import (
 	"time"
 
 	jwt "github.com/dgrijalva/jwt-go"
-	"github.com/ipoool/laporcuranmor-api/models"
+	"github.com/ipoool/golang-starter-kit/models"
 	config "github.com/spf13/viper"
 )
 
