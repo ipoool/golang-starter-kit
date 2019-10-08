@@ -1,6 +1,6 @@
 # GOLANG STARTER KIT
 
-## Run the Docker
+# Run the Docker
 
 First, Build the docker image
 
